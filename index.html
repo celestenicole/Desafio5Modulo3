@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desafio 5 modulo 3</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+<body>
+  <div class="main">
+    <div class="todo-card">
+
+      <!-- Header -->
+      <div class="todo-header text-center">
+        <h1>
+          <i class="fas fa-clipboard-list"></i> TODO LIST
+        </h1>
+      </div>
+      <!-- Header -->
+
+      <!-- Input Todo List -->
+      <div class="input-group mb-4">
+        <input id="inputTodo" type="text" class="form-control" placeholder="Nueva tarea..." aria-label="Nueva tarea">
+        <button class="btn btn-dark btn-add text-light" type="button">
+          <i class="fas fa-plus me-1"></i> Agregar
+        </button>
+      </div>
+      <!-- Input Todo List -->
+
+      <!-- Sections -->
+      <div class="row">
+
+        <!-- Todo Details Sections -->
+        <div class="col-md-3 mb-3 mb-md-0">
+          <div class="details-section">
+            <p>
+              Total: <span id="totalTodos">0</span>
+            </p>
+            <p>
+              Realizados: <span id="completedTodos">0</span>
+            </p>
+          </div>
+        </div>
+        <!-- Todo Details Sections -->
+
+        <!-- Todo List Section -->
+        <div class="col-md-9">
+          <div class="table-responsive">
+            <table id="tableTodo" class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Tarea</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Todo List Section -->
+
+      </div>
+      <!-- Sections -->
+      
+    </div>
+  </div>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  <!-- Script -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
